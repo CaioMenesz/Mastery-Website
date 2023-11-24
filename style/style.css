@@ -285,3 +285,89 @@ nav ul li a {
       text-align: center;
       color: #666;
     }
+
+    footer {
+        background-color: var(--gradientPricipal);
+        color: var(--text);
+        padding: 20px;
+        text-align: center;
+        bottom: 0;
+      }
+  
+    footer p {
+        margin: 0;
+    } 
+
+    .contact {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact h1 {
+        color: var(--gradientSecondary);
+    }
+
+    .contact h2 {
+        color: var(--primary);
+    }
+
+    .contact p {
+        text-align: justify;
+        color: var(--primary);
+    }
+
+    .contact-form {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+      form {
+        width: 100%;   
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        padding: 20px;
+        margin: 50px 0 50px 0;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+      }
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+  
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+  
+      button:hover {
+        background-color: #555;
+      }
+
+    .contact li {
+        list-style: none;
+    }
+
+    .contact span {
+        top: 30px;
+        left: -35px;
+        position: relative;
+        color: var(--gradientSecondary);
+    }
