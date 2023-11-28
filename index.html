@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/1st page/styles/styles.css">
     <title>Photograph Mastery</title>
 </head>
 <body>
@@ -14,14 +15,16 @@
         <span class="material-symbols-outlined">camera</span>
         <h1>Mastery</h1>
     </div>
-    <nav>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+      <nav class="navbar" id="navBar">
+        <i class="fa fa-xmark" onclick="hideMenu()"></i>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+              <li><a href="/1st page/pages/index.html">Home</a></li>
+              <li><a href="/1st page/pages/about.html">About</a></li>
+              <li><a href="/1st page/pages/services.html">Services</a></li>
+              <li><a href="/1st page/pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
 </header>
 
 <section class="content-section">
@@ -33,6 +36,7 @@
     <div class="image-content">
         <img src="https://images.unsplash.com/photo-1695938884001-7f3ffe7066e1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Your Image">
         <span class="backImage"></span>
+        <i class="fa fa-images"></i>
     </div>
 </section>
 
@@ -131,5 +135,19 @@
     <p>&copy; 2023 Mastery Photography Courses. All rights reserved.</p>
 </footer>
 
+<script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navBar.style.right = "0";
+  }
+
+  function hideMenu() {
+    navBar.style.right = "-200px";
+  }
+</script>
+
 </body>
 </html>
+
+INDEX.HTML

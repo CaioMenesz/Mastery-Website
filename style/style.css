@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
 
+/* ---------- GLOBAL STYLE ---------- */
 :root {
     --primary: #265073;
     --subText: #6f8597;
@@ -28,6 +29,8 @@ body {
         background-position: 100% 50%;
     }
 }
+
+/* ---------- HEADER ---------- */
 
 header {
     display: flex;
@@ -65,6 +68,44 @@ nav ul li a {
     color: var(--primary);
     font-weight: 400;
 }
+
+header .fa,
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .logo h1 {
+    font-size: 1rem;
+  }
+  .navbar ul {
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar {
+    position: fixed;
+    background: var(--gradientSecondary);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .navbar .fa {
+    display: block;
+    color: var(--text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .navbar a {
+    color: var(--middleColor);
+  }
+}
+
+/* ---------- CONTENT SECTION STYLE ---------- */
 
 .content-section {
     display: flex;
@@ -111,6 +152,47 @@ nav ul li a {
     box-shadow: 35px 35px 0 var(--primary);
 }
 
+.image-content .fa{
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .content-section h2 {
+    font-size: 1.2rem;
+  }
+  .content-section p {
+    font-size: .925rem;
+  }
+  .btn {
+    font-size: .825rem;
+  }
+  .content-section img {
+    width: 300px;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .content-section img {
+    width: 170px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-section {
+    flex-direction: column;
+    width: 80%;
+  }
+  .text-content {
+    max-width: 80%;
+  }
+  .content-section img {
+    display: none;
+  }
+}
+
+/* ---------- OUR EXPERIENCE SECTION STYLE ---------- */
+
 .our-experience-bg {
     background: var(--primary);
     padding: 50px 0;
@@ -148,6 +230,45 @@ nav ul li a {
     justify-content: space-between;
 }
 
+@media (max-width: 1100px) {
+  .our-experience img {
+    width: 300px;
+  }
+  .our-experience h2 {
+    font-size: 1.2rem;
+  }
+  .our-experience p {
+    font-size: .925rem;
+  }
+  .our-experience li {
+    font-size: .725rem;
+  }
+  .list-experience span {
+    top: 27px;
+    left: -35px;
+    position: relative;
+    color: var(--text);
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .our-experience img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .our-experience {
+    flex-direction: column;
+  }
+  .our-experience img {
+    display: none;
+  }
+}
+
+/* ---------- SERVICE SECTION STYLE ---------- */
+
 .services {
     width: 80%;
     margin: auto;
@@ -173,7 +294,7 @@ nav ul li a {
   
   .services-col img {
     width: 100%;
-    height: 470px;
+    height: 100%;
     display: block;
   }
   
@@ -246,6 +367,29 @@ nav ul li a {
     opacity: 1;
   }
 
+@media (max-width: 1100px) {
+  .services h1 {
+    font-size: 1.2rem;
+  }
+  .services p {
+    font-size: .725rem;
+  }
+  .services-col img {
+    display: block;
+  }
+  .layer h3 {
+    font-size: 1rem;
+  }
+  .layer p {
+    font-size: .925rem;
+  }
+  .layer button {
+    font-size: .725rem;
+  }
+}
+
+/* ---------- ABOUT SECTION STYLE ---------- */
+
   .about {
     width: 80%;
     margin: 0 auto;
@@ -286,6 +430,36 @@ nav ul li a {
       color: #666;
     }
 
+@media (max-width: 1100px) {
+  .about h1 {
+    font-size: 1.2rem;
+  }
+  .card-col {
+    width: 260px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .about h1 {
+    margin-top: 50px;
+  }
+  .row {
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .card-col {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+/* ---------- FOOTER SECTION STYLE ---------- */
+
     footer {
         background-color: var(--gradientPricipal);
         color: var(--text);
@@ -296,7 +470,9 @@ nav ul li a {
   
     footer p {
         margin: 0;
-    } 
+    }
+
+/* --------- CONTACT FORM SECTION STYLE --------- */
 
     .contact {
         width: 80%;
@@ -321,6 +497,8 @@ nav ul li a {
         width: 100%;
         margin: 0 auto;
     }
+
+    /* ---------- FORM STYLE ---------- */
 
       form {
         width: 100%;   
