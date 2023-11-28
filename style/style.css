@@ -376,6 +376,7 @@ nav .fa {
   }
   .services-col img {
     display: block;
+    height: 350px;
   }
   .layer h3 {
     font-size: 1rem;
@@ -385,6 +386,20 @@ nav .fa {
   }
   .layer button {
     font-size: .725rem;
+  }
+  .layer:hover button {
+    bottom: 35%;
+    opacity: 1;
+  }
+  
+  .layer:hover p {
+    bottom: 50%;
+    opacity: 1;
+  }
+  
+  .layer:hover h3 {
+    bottom: 55%;
+    opacity: 1;
   }
 }
 
