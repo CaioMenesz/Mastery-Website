@@ -93,6 +93,10 @@ nav .fa {
     z-index: 2;
     transition: 1s;
   }
+  header .fa {
+    display: block;
+    color: var(--gradientSecondary);
+  }
   .navbar .fa {
     display: block;
     color: var(--text);
@@ -310,6 +314,7 @@ nav .fa {
   
   .layer:hover {
     background: rgba(12, 42, 66, 0.7);
+    background: var(--);
   }
   
   .layer h3 {
@@ -375,10 +380,6 @@ nav .fa {
   }
   .services-col img {
     display: block;
-    height: 350px;
-  }
-  .layer {
-    background: rgba(12, 42, 66, 0.7);
   }
   .layer h3 {
     font-size: 1rem;
@@ -388,20 +389,6 @@ nav .fa {
   }
   .layer button {
     font-size: .725rem;
-  }
-  .layer button {
-    bottom: 35%;
-    opacity: 1;
-  }
-  
-  .layer p {
-    bottom: 50%;
-    opacity: 1;
-  }
-  
-  .layer h3 {
-    bottom: 55%;
-    opacity: 1;
   }
 }
 
